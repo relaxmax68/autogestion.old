@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /Dropbox/Github/autogestion
+
+
+# gestion des erreurs
+ErrorDocument 404 /erreur.php
+
+
+# gestion des routes
+
+RewriteRule ^(.*)/(.*)/(.*)/$	    controleur.php?d1=$1&d2=$2&d3=$3  		[QSA]
+RewriteRule ^(.*)/(.*)/$	    	controleur.php?d1=$1&d2=$2    	 		[QSA]
+RewriteRule ^(.*)/$               	controleur.php?d1=$1            		[QSA]
+RewriteRule ^accueil$               controleur.php?d1=accueil          		[QSA]
+
+# gestion de routes désactivées
+#RewriteRule ^action/(.*)/(.*)/$    controleur.php?d1=action&d2=$1&d3=$2	[QSA]
+#RewriteRule ^action/(.*)/$         controleur.php?d1=action&d2=$1			[QSA]
