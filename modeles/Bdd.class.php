@@ -28,12 +28,13 @@ class Bdd extends PDO {
         $dns          = 'mysql:host=localhost;dbname=autogestion';
         $utilisateur  = 'root';
         $motDePasse   = 'musique(\'&';
-        self::$_instance = new PDO($dns,$utilisateur,$motDePasse,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-        self::$_instance->exec("SET NAMES utf8");
-
+        // Options de connection
+        $options=array(
+          PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+          PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        );
+        self::$_instance = new PDO($dns,$utilisateur,$motDePasse,$options);
       } catch (PDOException $e) {
-      
         echo $e;
       }
     } 
