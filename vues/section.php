@@ -1,5 +1,7 @@
+<section>
 <?php
 
-	require_once("essaiPDO.php");
-echo "section";
+require_once("vues/".$vue);
+
 ?>
+</section>

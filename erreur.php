@@ -1,5 +1,5 @@
 <?php
 
-echo "<h1>erreur redirigée !</h1>";
+echo "<h1>redirection d'erreur 404 !</h1>";
 
 ?>

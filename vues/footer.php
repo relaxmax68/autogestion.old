@@ -1,17 +1,12 @@
+<footer>
 <?php
 
-echo '<footer>';
 
-echo 'footer';
-
-echo '</footer>';
 
 ?>
-
+</footer>
 
 <!-- ne rien changer ci-dessous -->
 
-<!-- fin div container -->
-</div>
 </body>
 </html>

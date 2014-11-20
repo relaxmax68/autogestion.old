@@ -1,5 +1,5 @@
 <?php
 
-header("Location:accueil");
+header("Location:accueil/");
 
 ?>

@@ -6,14 +6,12 @@ spl_autoload_register(function ($class) {
 });
 
 //gestion des routes
-if($_GET['d1']=="accueil")
-{
-	require_once("vues/page_globale.php");
-}else
-{
-	echo "<h1>bug du controleur</h1>";
-	echo "<pre>".print_r($_GET)."</pre>";
+if($_GET['d1']=="accueil"){
+	$vue="listeComptes.php";
+}else{
+	$vue="erreurURL.php";
 }
 
+require("vues/page_globale.php");
 
 ?>
