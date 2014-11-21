@@ -6,13 +6,6 @@ spl_autoload_register(function ($class) {
 });
 
 //gestion des routes
-/*if($_GET['d1']=="accueil"){
-	$vue="listeComptes.php";
-}else{
-	$vue="erreurURL.php";
-}
-*/
-
 switch($_GET['d1']){
 	case "accueil":
 		$vue="listeComptes.php";
@@ -22,6 +15,9 @@ switch($_GET['d1']){
 		break;
 	case "synthese":
 		$vue="synthese.php";
+		break;
+	case "saisie":
+		$vue="saisie.php";
 		break;
 	default:
 		$vue="erreurURL.php";
