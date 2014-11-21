@@ -15,13 +15,12 @@ $reponse->execute();
 //On parcourt l'objet récupéré sous forme de tableau pour afficher chacun des enregistrements
 
 
-while ($element = $reponse->fetch(PDO::FETCH_ASSOC))
-	foreach ($element as $key => $value) {
 
-			$form	->add('Text', $key)
-					->value($value)	
-		 	        ->label($key);
-	}
+while ($element = $reponse->fetch(PDO::FETCH_ASSOC))
+{
+	$form	->add('Text', $element['intitule'])
+	->value($element['total'])
+	->label($element['intitule']);
 }
 //affiche le formulaire
 echo $form;
