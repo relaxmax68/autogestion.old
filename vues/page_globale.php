@@ -1,18 +1,22 @@
-<?php 
+<?
 /*
 ** structure de la page de présentation principale
 */
-require_once("head.php");
+require_once("head.php");?>
 
-echo '<div class="container">';
+<div class="container">
+	<div class="row">
+		<?
+		require_once("logo.php");
+		require_once("notifications.php");
+		require_once("connexion.php");
+		?>
+	</div>
 
-// affichage de la barre de connexion supérieure :
-if(!empty($_SESSION['connex_active'])) {
-  barreConnexion($_SESSION['connex_active']);
-}
-
-require_once("header.php");
-require_once("section.php");
+	<?
+	require_once("menu.php");
+	require_once("header.php");
+	require_once("section.php");
 echo '</div>';
 
 require_once("footer.php");

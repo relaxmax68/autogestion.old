@@ -1,12 +1,5 @@
-<footer>
-<?php
-
-
-
-?>
+<footer class="row">
+	<div class="col-lg-12">
+	 	Pied de page
+	</div>
 </footer>
-
-<!-- ne rien changer ci-dessous -->
-
-</body>
-</html>
