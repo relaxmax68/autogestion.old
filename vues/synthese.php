@@ -1,5 +1,4 @@
-<div class="col-lg-12">
-  <h3>Solde des comptes</h3>
+<h3>Solde des comptes</h3>
 
 <?php
 
@@ -15,11 +14,14 @@ $reponse->execute();
 
 //On parcourt l'objet récupéré sous forme de tableau pour afficher chacun des enregistrements
 
+
 while ($element = $reponse->fetch(PDO::FETCH_ASSOC))
-{
-	$form	->add('Text', $element['intitule'])
-			->value($element['total'])	
- 	        ->label($element['intitule']);
+	foreach ($element as $key => $value) {
+
+			$form	->add('Text', $key)
+					->value($value)	
+		 	        ->label($key);
+	}
 }
 //affiche le formulaire
 echo $form;
@@ -27,4 +29,4 @@ echo $form;
 $reponse->closeCursor();
 
 ?>
-</div>
+

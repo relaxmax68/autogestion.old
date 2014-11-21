@@ -18,7 +18,7 @@
 	        		<?require_once("connexion.php");?>
 	        	</div>        	
 		        <div class="col-lg-12">
-	    	    	Titre
+	        		<?require_once("header.php");?>
 	        	</div>
 	    	</header>
 
@@ -27,30 +27,32 @@
 		        <div class="col-lg-2">
 		          	<div class="row">
 			            <aside class="col-lg-12">
-			        		<?require_once("module.php");?>
+			        		<?require("module.php");?>
 			            </aside>
 			            <aside class="col-lg-12">
-			        		<?require_once("module.php");?>
+			        		<?require("module.php");?>
 			            </aside>
 		          	</div>
 		        </div>
 
 		        <section class="col-lg-8">
 		        	<div class="row">
-			        	<?require_once("menu.php");?>
-			        </div>
-		        	<div class="row">		        
-			        	<?require_once("section.php");?>
+			        	<div class="col-lg-12">
+				        	<?require_once("menu.php");?>
+				        </div>
+				        <div class="col-lg-12">
+				        	<?require_once("section.php");?>
+				        </div>
 			        </div>
 		        </section>
 
 		        <div class="col-lg-2">
 		          	<div class="row">
 		            	<aside class="col-lg-12">
-			        		<?require_once("module.php");?>
+			        		<?require("module.php");?>
 		            	</aside>
 		            	<aside class="col-lg-12">
-			        		<?require_once("module.php");?>
+			        		<?require("module.php");?>
 		            	</aside>
 		            </div>
 		        </div>
