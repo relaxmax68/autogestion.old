@@ -6,10 +6,25 @@ spl_autoload_register(function ($class) {
 });
 
 //gestion des routes
-if($_GET['d1']=="accueil"){
+/*if($_GET['d1']=="accueil"){
 	$vue="listeComptes.php";
 }else{
 	$vue="erreurURL.php";
+}
+*/
+
+switch($_GET['d1']){
+	case "accueil":
+		$vue="listeComptes.php";
+		break;
+	case "comptes":
+		$vue="comptes.php"
+		break;
+	case "synthese":
+		$vue="synthese.php";
+		break;
+	default:
+		$vue="erreurURL.php";
 }
 
 require("vues/page_globale.php");
