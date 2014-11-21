@@ -19,6 +19,9 @@ switch($_GET['d1']){
 	case "saisie":
 		$vue="saisie.php";
 		break;
+	case "testBootstrap";
+		$vue="bootstrap.php";
+		break;
 	default:
 		$vue="erreurURL.php";
 }
