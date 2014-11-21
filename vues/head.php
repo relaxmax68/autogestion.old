@@ -20,7 +20,7 @@
     <!-- charger le nom du theme_frontend dans la bdd **************** -->
     
 	
-    <link rel="stylesheet" href="../librairies/css/style.css type="text/css"">
+    <link rel="stylesheet" href="../librairies/css/style.css" type="text/css">
     <link rel="stylesheet" href="../librairies/css/bootstrap.min.css" >
   </head>
   
