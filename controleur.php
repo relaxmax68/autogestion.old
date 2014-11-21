@@ -18,7 +18,7 @@ switch($_GET['d1']){
 		$vue="listeComptes.php";
 		break;
 	case "comptes":
-		$vue="comptes.php"
+		$vue="comptes.php";
 		break;
 	case "synthese":
 		$vue="synthese.php";
