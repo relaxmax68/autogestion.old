@@ -1,5 +1,7 @@
 <?php 
-
+/*
+** structure de la page de présentation principale
+*/
 require_once("head.php");
 
 echo '<div class="container">';
