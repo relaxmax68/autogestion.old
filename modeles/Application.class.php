@@ -8,6 +8,7 @@ class Application{
 	public $BDD_NAME;
 	public $BDD_USER;
 	public $BDD_PASSWORD;
+	public $root;
 	
 	public function demarrerApplication(){
 
@@ -16,6 +17,7 @@ class Application{
 		$this->BDD_NAME="autogestion";	
 		$this->BDD_USER="raoul"; 
 		$this->BDD_PASSWORD="musique";
+		$this->root=__DIR__;
 
 	}
 }

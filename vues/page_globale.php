@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 
-	<? require_once("head.php");?>
+	<? require("head.php");?>
 
 	<body>
+
 	    <div class="container">
 
 	        <header class="row">
@@ -27,7 +28,7 @@
 		        <div class="col-lg-2">
 		          	<div class="row">
 			            <aside class="col-lg-12">
-			        		<?require("module.php");?>
+			        		<?require("url.php");?>
 			            </aside>
 			            <aside class="col-lg-12">
 			        		<?require("module.php");?>

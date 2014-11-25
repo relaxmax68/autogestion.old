@@ -14,8 +14,8 @@
     <![endif]-->
     <title>Espace d'autogestion</title>
 
-    <link rel="stylesheet" href="../librairies/css/style.css" type="text/css">
-    <link rel="stylesheet" href="../librairies/css/bootstrap.min.css" >
+<? echo '<link rel="stylesheet" href="'.$root.'/librairies/css/style.css" type="text/css">';?>
+<? echo '<link rel="stylesheet" href="'.$root.'/librairies/css/bootstrap.min.css">';?>
 
 </head>
 
