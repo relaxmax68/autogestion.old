@@ -8,17 +8,18 @@ class Application{
 	public $BDD_NAME;
 	public $BDD_USER;
 	public $BDD_PASSWORD;
+	public $connexion;
 	public $root;
-	
-	public function demarrerApplication(){
-
+	/*
+	** constructeur par défaut qui charge les paramètres de configuration de l'application
+	*/
+	public function __construct(){
 		//à modifier pour récupérer les paramètres en XML
 		$this->BDD_SERVER="127.0.0.1";
 		$this->BDD_NAME="autogestion";	
 		$this->BDD_USER="raoul"; 
 		$this->BDD_PASSWORD="musique";
-		$this->root=__DIR__;
-
+		$this->connexion=false;
 	}
 }
 

@@ -1,2 +1,4 @@
 Logo
-<a href='accueil/'>retour vers l'accueil</a>
+<?echo '<form action="'.$application->root.'/action/retour/" >';?>
+	<input type="submit" text="ok">
+</form>
