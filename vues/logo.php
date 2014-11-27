@@ -1,4 +1,5 @@
 Logo
-<?echo '<form action="'.$application->root.'/action/retour/" >';?>
-	<input type="submit" text="ok">
-</form>
+<?
+echo '<form action="'.$application->root.'/action/retour/" >';
+echo '<input type="submit" text="accueil"></form>';
+?>

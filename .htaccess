@@ -1,3 +1,5 @@
+Options +FollowSymLinks -indexes
+
 RewriteEngine On
 RewriteBase /Developpement/github/autogestion
 

@@ -1,5 +1,5 @@
 <p>
-	<a href="#">Inbox <span class="badge">42</span></a>
+	<a href="#">Notifications<span class="badge">42</span></a>
 </p>
 
 
