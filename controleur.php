@@ -45,6 +45,9 @@ if(isset($_GET['d1'])){
 			case "testBootstrap";
 				$vue="bootstrap.php";
 				break;
+			case "parametres";
+				$vue="parametres.php";
+				break;				
 			default:
 				$vue="erreurURL.php";
 		}
