@@ -7,6 +7,9 @@ spl_autoload_register(function ($class) {
 session_start();
 $application = &$_SESSION['application'];
 if (!is_object($application))$application = new Application();
+$parametre = &$_SESSION['parametre'];
+if (!is_object($parametre))$parametre = new Parametre();
+$parametre=new Parametre();
 
 //gestion des routes
 
