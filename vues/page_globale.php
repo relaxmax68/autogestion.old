@@ -50,7 +50,7 @@
 		        <div class="col-lg-2">
 		          	<div class="row">
 		            	<aside class="col-lg-12">
-			        		<?require("module.php");?>
+			        		<?require("secret.php");?>
 		            	</aside>
 		            	<aside class="col-lg-12">
 			        		<?require("module.php");?>
